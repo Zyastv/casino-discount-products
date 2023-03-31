@@ -9,7 +9,7 @@ import "./Cards.css";
 function Cards() {
   return (
     <div className='cards'>
-      <h1>Check out our Products!</h1>
+      <h1>See What We Have to Offer!</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>

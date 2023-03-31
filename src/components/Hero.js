@@ -13,7 +13,7 @@ function Hero() {
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          LOOK AT OUR PRODUCTS
+          TAKE A LOOK
         </Button>
       </div>
     </div>
