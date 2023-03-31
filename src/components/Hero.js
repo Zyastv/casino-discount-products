@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "./Button";
 import "./Hero.css";
+import fadeIn from "react-animations/lib/fade-in";
 
 function Hero() {
   return (
