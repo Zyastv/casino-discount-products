@@ -1,7 +1,8 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import "./App.css";
+import Home from "./components/Pages/Home";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' exact />
+          <Route path='/' element={<Home />} />
         </Routes>
       </Router>
     </>
