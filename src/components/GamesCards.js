@@ -2,6 +2,9 @@ import React from "react";
 import CardItem from "./CardItem";
 import Roulette from "./Images/IMG_0569.JPG";
 import Placeholder from "./Images/CDPHomePage.JPG";
+import Blackjack from "./Images/Blackjack.jpg";
+import Poker from "./Images/Poker.jpg";
+import Craps from "./Images/Craps.jpg";
 import "./Cards.css";
 
 function GamesCards() {
@@ -12,37 +15,38 @@ function GamesCards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src={Placeholder}
-              text='Look for Items by games!'
+              src={Blackjack}
+              label='Blackjack'
+              text='Dealing Shoes and Accessories'
               path='/blackjack'
             />
             <CardItem
-              src={Placeholder}
-              text='Look for a specific Item!'
+              src={Poker}
+              text='Poker Bases, Poker Drop Slides, Poker Drink carts and Meal Carts'
               label='Poker'
               path='/poker'
             />
             <CardItem
-              src={Placeholder}
-              text='Let us know any questions you have!'
+              src={Craps}
+              text='Craps Bank Cover, Dice Accessories, and Table Rubber'
               label='Craps'
               path='/craps'
             />
             <CardItem
               src={Placeholder}
-              text='Check our terms and conditions for Freight, Sales, and Website use'
+              text='Baccarat size dealing shoes, Discard cans and Pens'
               label='Baccarat'
               path='/baccarat'
             />
             <CardItem
               src={Placeholder}
-              text='Check our terms and conditions for Freight, Sales, and Website use'
+              text='Cups, Dice, and Tiles'
               label='Pai Gow'
               path='/paigow'
             />
             <CardItem
               src={Roulette}
-              text='Check our terms and conditions for Freight, Sales, and Website use'
+              text='Roulette Indicator racks, Balls, Markers, and Finials'
               label='Roulette'
               path='Roulette'
             />
