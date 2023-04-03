@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
 function Footer() {
   return (
     <div className='footer-container'>
@@ -42,7 +46,7 @@ function Footer() {
       <div className='copy-right'>
         <div className='copy-right-wrapper'>
           <div className='footer-logo'>
-            <Link to='/' className='bottom-logo'>
+            <Link to='/' onClick={scrollToTop} className='bottom-logo'>
               C.D.P
             </Link>
           </div>

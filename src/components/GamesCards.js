@@ -11,7 +11,11 @@ function GamesCards() {
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
-            <CardItem src={Placeholder} text='Blackjack' path='/blackjack' />
+            <CardItem
+              src={Placeholder}
+              text='Look for Items by games!'
+              path='/blackjack'
+            />
             <CardItem
               src={Placeholder}
               text='Look for a specific Item!'
