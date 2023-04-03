@@ -20,6 +20,14 @@
     transition: all 0.3s ease-out;
 }
 
+.btn--outline--dark {
+    background-color: transparent;
+    color: #124774;
+    padding: 8px 20px;
+    border: 1px solid #124774;
+    transition: all 0.3s ease-out;
+}
+
 .btn--medium {
     padding: 8px 20px;
     font-size: 20px;
@@ -30,10 +38,18 @@
     font-size: 20px;
 }
 
-.btn--medium:hover,
-.btn--large:hover {
+.btn--primary:hover,
+.btn--outline:hover{
     background: #fff;
     color: #124774;
     transition: all 0.3s ease-out;
     transition: 250ms;
+}
+
+.btn--outline--dark:hover {
+    background-color: #124774;
+    color: #fff;
+    padding: 8px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
 }
