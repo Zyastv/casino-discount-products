@@ -1,14 +1,12 @@
 import React from "react";
 import Hero from "../Hero";
-import Cards from "../Cards";
-import Footer from '../Footer';
+import HomeCards from "../HomeCards";
 
 function Home() {
   return (
     <>
       <Hero />
-      <Cards />
-      <Footer />
+      <HomeCards />
     </>
   );
 }

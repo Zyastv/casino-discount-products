@@ -58,7 +58,7 @@
   width: 100%;
 }
 
-.copy-right-wrap {
+.copy-right-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,7 +90,8 @@
     margin-bottom: 2rem;
   }
   .footer-link-items {
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .footer-input {
     width: 100%;

@@ -8,10 +8,7 @@
   }
   
   .cards__container {
-    display: flex;
-    flex-flow: column;
     align-items: center;
-    max-width: 1120px;
     width: 90%;
     margin: 0 auto;
   }
@@ -22,25 +19,27 @@
   }
   
   .cards__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 24px;
   }
   
   .cards__item {
     display: flex;
-    flex: 1;
     margin: 0 1rem;
     height: 350px;
     width: 350px;
     border-radius: 10px;
+    margin-bottom: 2rem;
   }
   
   .cards__item__link {
-    display: flex;
-    flex-flow: column;
+    display: block;
     width: 100%;
     box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, .20));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, .20));
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
@@ -101,26 +100,6 @@
     line-height: 24px;
   }
 
-
-  @media only screen and (min-width: 1400px) {
-    .cards__items {
-      display: flex;
-    }
-  }
-
-  @media only screen and (max-width: 1400px) {
-    .cards__items {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      grid-template-rows: auto;
-    }
-  }
-
-  @media only screen and (max-width: 1400px) {
-    .cards__item {
-      margin-bottom: 2rem;
-    }
-  }
 
   @media only screen and (max-width: 750px) {
     .cards__items {

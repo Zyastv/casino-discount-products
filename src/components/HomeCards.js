@@ -6,7 +6,7 @@ import Terms from "./Images/Terms.jpg";
 import ContactUs from "./Images/ContactUs.jpg";
 import "./Cards.css";
 
-function Cards() {
+function HomeCards() {
   return (
     <div className='cards'>
       <h1>See What We Have to Offer!</h1>
@@ -23,19 +23,19 @@ function Cards() {
               src={Shoe}
               text='Look for a specific Item!'
               label='Table Accessories'
-              path='/Table-Accessories'
+              path='/table-Accessories'
             />
             <CardItem
               src={ContactUs}
-              text='Let us know about any questions you have!'
+              text='Let us know any questions you have!'
               label='Contact us'
-              path='/Contact'
+              path='/contact'
             />
             <CardItem
               src={Terms}
-              text='Be sure to check our terms and conditions for Freight, Sales, and Website use'
+              text='Check our terms and conditions for Freight, Sales, and Website use'
               label='Terms and Conditions'
-              path='/Terms'
+              path='/terms'
             />
           </ul>
         </div>
@@ -44,4 +44,4 @@ function Cards() {
   );
 }
 
-export default Cards;
+export default HomeCards;
