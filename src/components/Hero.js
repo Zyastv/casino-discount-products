@@ -8,6 +8,7 @@ function Hero() {
       <h1>CASINO DISCOUNT PRODUCTS</h1>
       <div className='hero-btns'>
         <Button
+          path='/products'
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
