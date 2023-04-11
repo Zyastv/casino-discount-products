@@ -1,15 +1,15 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTruckMoving } from "@fortawesome/free-solid-svg-icons";
-import { faFileContract } from "@fortawesome/free-solid-svg-icons";
-import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faTruckMoving } from "@fortawesome/free-solid-svg-icons";
+// import { faFileContract } from "@fortawesome/free-solid-svg-icons";
+// import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 import "../Terms.css";
 
 function Terms() {
   return (
     <div className='card-container'>
       <div className='card'>
-        <FontAwesomeIcon icon={faFileContract} className='card-image' />
+        <i className='fas fa-file-contract card-image' />
         <div className='card-title'>Website Terms and Conditions</div>
         <div className='card-text'>
           Our website is available for our customer's convenience. You are
@@ -25,7 +25,7 @@ function Terms() {
         </div>
       </div>
       <div className='card'>
-        <FontAwesomeIcon icon={faTruckMoving} className='card-image' />
+        <i className='fas fa-truck-moving card-image' />
         <div className='card-title'>Freight Terms and Conditions</div>
         <div className='card-text'>
           All non-U.S. shipments may require 50% deposit with balance paid prior
@@ -48,7 +48,7 @@ function Terms() {
         </div>
       </div>
       <div className='card'>
-        <FontAwesomeIcon icon={faDollarSign} className='card-image' />
+        <i className='fas fa-dollar-sign card-image' />
         <div className='card-title'>Sales Terms and Conditions</div>
         <div className='card-text'>
           Net 30 days on accounts with approved credit rating. All prices are

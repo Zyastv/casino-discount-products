@@ -6,6 +6,7 @@ import Home from "./components/Pages/Home";
 import Games from "./components/Pages/Games";
 import Contact from "./components/Pages/Contact";
 import Terms from "./components/Pages/Terms";
+import TableAccessories from "./components/Pages/TableAccessories";
 import "./App.css";
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/games' element={<Games />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/Terms' element={<Terms />} />
+          <Route path='/terms' element={<Terms />} />
+          <Route path='/table-accessories' element={<TableAccessories />} />
         </Routes>
         <Footer />
       </Router>

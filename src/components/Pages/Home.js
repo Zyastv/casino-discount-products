@@ -13,36 +13,32 @@ function Home() {
       <Hero />
       <div className='cards'>
         <h1>See What We Have to Offer!</h1>
-        <div className='cards__container'>
-          <div className='cards__wrapper'>
-            <ul className='cards__items'>
-              <CardItem
-                src={Roulette}
-                text='Look for Items by games!'
-                label='Games'
-                path='/games'
-              />
-              <CardItem
-                src={Shoe}
-                text='Look for a specific Item!'
-                label='Table Accessories'
-                path='/table-Accessories'
-              />
-              <CardItem
-                src={ContactUs}
-                text='Let us know any questions you have!'
-                label='Contact us'
-                path='/contact'
-              />
-              <CardItem
-                src={Terms}
-                text='Check our terms and conditions for Freight, Sales, and Website use'
-                label='Terms and Conditions'
-                path='/terms'
-              />
-            </ul>
-          </div>
-        </div>
+        <ul className='cards__items'>
+          <CardItem
+            src={Roulette}
+            text='Look for Items by games!'
+            label='Games'
+            path='/games'
+          />
+          <CardItem
+            src={Shoe}
+            text='Look for a specific Item!'
+            label='Table Accessories'
+            path='/table-accessories'
+          />
+          <CardItem
+            src={ContactUs}
+            text='Let us know any questions you have!'
+            label='Contact us'
+            path='/contact'
+          />
+          <CardItem
+            src={Terms}
+            text='Check our terms and conditions for Freight, Sales, and Website use'
+            label='Terms and Conditions'
+            path='/terms'
+          />
+        </ul>
       </div>
     </>
   );

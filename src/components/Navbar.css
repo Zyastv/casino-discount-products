@@ -89,6 +89,7 @@
     }
   
     .nav-menu.active {
+      justify-content: start;
       background: #124774;
       left: 0;
       opacity: 1;
