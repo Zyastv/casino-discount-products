@@ -8,6 +8,7 @@ function Navbar() {
   const [button, setButton] = useState(true);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+  const scrollToTop = () => window.scrollTo(0, 0);
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
@@ -24,7 +25,14 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <Link
+            to='/'
+            className='navbar-logo'
+            onClick={() => {
+              closeMobileMenu();
+              scrollToTop();
+            }}
+          >
             C.D.P
           </Link>
           <div className='menu-icon' onClick={handleClick}>

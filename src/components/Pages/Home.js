@@ -6,10 +6,13 @@ import Shoe from "../Images/IMG_0644.JPG";
 import Terms from "../Images/Terms.jpg";
 import ContactUs from "../Images/ContactUs.jpg";
 import "../Cards.css";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 function Home() {
   return (
     <>
+      <Navbar />
       <Hero />
       <div className='cards'>
         <h1>See What We Have to Offer!</h1>
@@ -40,6 +43,7 @@ function Home() {
           />
         </ul>
       </div>
+      <Footer />
     </>
   );
 }

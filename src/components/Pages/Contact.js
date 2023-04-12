@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Button } from "../Button";
 import "../Contact.css";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -13,45 +15,49 @@ function Contact() {
   };
 
   return (
-    <div className='contact-form-container'>
-      <h2>Contact Us</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type='text'
-          id='name'
-          value={name}
-          placeholder='Name'
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
+    <>
+      <Navbar />
+      <div className='contact-form-container'>
+        <h2>Contact Us</h2>
+        <form onSubmit={handleSubmit}>
+          <input
+            type='text'
+            id='name'
+            value={name}
+            placeholder='Name'
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
 
-        <input
-          type='email'
-          id='email'
-          value={email}
-          placeholder='Email'
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
+          <input
+            type='email'
+            id='email'
+            value={email}
+            placeholder='Email'
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
 
-        <textarea
-          className='message'
-          id='message'
-          value={message}
-          placeholder='Message'
-          onChange={(e) => setMessage(e.target.value)}
-          required
-        ></textarea>
+          <textarea
+            className='message'
+            id='message'
+            value={message}
+            placeholder='Message'
+            onChange={(e) => setMessage(e.target.value)}
+            required
+          ></textarea>
 
-        <Button
-          className='btn'
-          buttonStyle='btn--outline--dark'
-          buttonSize='btn--medium'
-        >
-          Submit
-        </Button>
-      </form>
-    </div>
+          <Button
+            className='btn'
+            buttonStyle='btn--outline--dark'
+            buttonSize='btn--medium'
+          >
+            Submit
+          </Button>
+        </form>
+      </div>
+      <Footer />
+    </>
   );
 }
 
