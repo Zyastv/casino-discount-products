@@ -1,0 +1,28 @@
+.searchInputs {
+    margin: 20px 20px 0px 20px;
+    display: flex;
+}
+.search input{
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    font-size: 18px;
+    padding: 15px;
+    height: 30px;
+    width: 200px;
+}
+.search-icon {
+    background-color: #fff;
+    height: 30px;
+    width: 50px;
+    display: grid;
+    place-items: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+.search-icon svg {
+    font-size: 35;
+}

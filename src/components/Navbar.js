@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import "./Navbar.css";
+import Searchbar from "./Searchbar";
+import Productdata from "../data.json";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -70,6 +72,7 @@ function Navbar() {
             </Button>
           )}
         </div>
+        <Searchbar placeholder='Search' data={Productdata} />
       </nav>
     </>
   );
